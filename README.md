@@ -1,1 +1,1 @@
-# Codeofoces-Random-Problem-Generator
+# Codefoces-Random-Problem-Generator
