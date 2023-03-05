@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Problem Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
+<body class="mt-20" style="background-color: #d9f99d; font-family: Roboto ">
+
+    <div class="container mx-auto px-4 py-8">
+
+        <div class="flex flex-col items-center justify-center" style="color:#27272a">
+            <h1 class="text-3xl font-bold mb-4">Random Problem Generator</h1>
+        </div>
+
+        <div class="ml-12 mr-12 flex flex-col items-center justify-center bg-gray-100 p-8 rounded-lg shadow-lg border border-black-1000" id="main_frame" style="background-color: #dbeafe,">
+
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-bold mb-2 ml-6">Codeforces Username</label>
+                <input type="text" id="user_name" name="user_name" class="px-3 py-2 border rounded-lg" style="border-color: black; border-width: 2px; background-color:aliceblue; color: #1F2937" required/>
+            </div>
+
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Problem Rating</label>
+
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Select an
+                    option</label>
+                <select id="rating" style="border-color: black; border-width: 2px; background-color:aliceblue; color: #1F2937"
+                    class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                </select>
+
+            </div>
+
+            <button type="button" onclick="gen()"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" style="background-color: black">
+                Generate
+            </button>
+        </div>
+    </div>
+
+</body>
+<script>
+    var rat = "";
+    for (let i = 800; i <= 3500; i += 100) {
+        rat += `<option value="${i}" id ="r${i}"> ${i} </option>` + "\n";
+    }
+    document.getElementById("rating").innerHTML = rat;
+</script>
+<script src="script.js"> </script>
+
+</html>
