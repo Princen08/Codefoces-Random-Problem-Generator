@@ -32,30 +32,18 @@ function gen() {
             
             return response.json();
         }).then((data) => {
+            let mp = new Map();
             for(let i = 0; i < data.result.length; i++) {
                 if(data.result[i].problem.rating == rating && data.result[i].verdict == "OK") {
                    done.push(data.result[i].problem.contestId + data.result[i].problem.index);
+                   mp.set(data.result[i].problem.contestId + data.result[i].problem.index, 1)
                 }
             }
-            done.sort();
             for(let i = 0; i < can.length; i++) {
-            let tar = can[i].contestId + can[i].index;
-            let low = 0, high = done.length - 1;
-            let found = 0;
-            while(low <= high) {
-                let mid = (low + high) / 2;
-                if(done[mid] == tar) {
-                    found = 1;
-                    break;
-                } else if(done[mid] > tar) {
-                    high = mid - 1;
-                } else {
-                    low = mid + 1;
-                }
-            }
-            if(found == 0) {
-                good.push(can[i]);
-            }
+               let tar = can[i].contestId + can[i].index;
+               if(mp.has(tar) == false) {
+                 good.push(can[i]);
+               }
             }
             if(good.length > 0) {
                 let min = 0;
