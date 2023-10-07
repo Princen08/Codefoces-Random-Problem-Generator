@@ -1,20 +1,30 @@
-# Random Problem Generator
+# Codeforces Random Problem Generator Web App
 
-Random Problem Generator is web-based app in which users can generate any random codeforces problem by selecting rating and generated problem wasn't solved by user.
+[![HTML](https://img.shields.io/badge/HTML-%E2%9A%99%EF%B8%8F-orange)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS-%F0%9F%8E%A8-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-%F0%9F%9A%80-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+## Overview
 
-## Authors
+The Codeforces Random Problem Generator Web App is a web-based application that allows users to generate random programming problems from Codeforces, a popular competitive programming platform. This web app is built using HTML ⚙️, CSS 🎨, and JavaScript 🚀, and it utilizes the Codeforces API to fetch and display random programming problems for practice.
 
-Prince Patel
+## Features
 
+- Generate random programming problems from Codeforces.
+- Filter problems based on difficulty level.
+- Practice problem-solving skills and improve competitive programming abilities.
+- User-friendly and responsive design for a seamless experience on desktop and mobile devices.
 
-## Example
-![Screenshot (9)](https://github.com/Princen08/Codefoces-Random-Problem-Generator/assets/92536834/9a5223d4-c28b-40ce-8dbd-0e160d955148)
+## Prerequisites
 
-![Screenshot (8)](https://github.com/Princen08/Codefoces-Random-Problem-Generator/assets/92536834/a782fb24-8039-4c79-b1f0-4c15b2fb0553)
+Before running the web app, make sure you have the following prerequisites:
 
+- A modern web browser (Google Chrome, Mozilla Firefox, Safari, etc.).
+- Active internet connection.
+- A Codeforces account (optional, but recommended for accessing more features).
 
-
-## Demo
-https://srand.netlify.app/
+## Usage
+- Generate a Random Problem: After opening the web app, click the "Generate Problem" button to fetch a random programming problem from Codeforces.
+- Filter by Difficulty: You can filter problems by difficulty level using the dropdown menu provided.
+- View Problem Details: Click on a problem card to view its details, including the problem statement, input/output examples, and sample solutions.
 
